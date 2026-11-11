@@ -2,7 +2,8 @@
 import subprocess
 from pathlib import Path
 
-BASE_DIR = Path(__file__).parent.resolve()
+# Points to the directory where Docker containers are located (~/docker)
+BASE_DIR = Path.home() / "docker"
 
 def run_command(cmd, cwd=None):
     try:
